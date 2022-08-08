@@ -8,4 +8,4 @@ const connectionString =
         useUniFiedTopology: true
     });
 
-    module.exports = connection;
+module.exports = connection;
