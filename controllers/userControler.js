@@ -56,7 +56,7 @@ module.exports = {
         User.findOneAndUpdate(
             { _id: req.params.userId },
             { $addToSet: { friends: req.params.friendId } },
-            { runValidators: true, new: true }
+            { runValidators: true, New: true }
         )
             .then((user) => 
               !user
