@@ -15,7 +15,7 @@ module.exports = {
           ? res.status(404).json({ message: 'No Thought find!!'})
           : res.json(thought)
         )
-        // .catch((err) => res.status(500).json(err));
+        .catch((err) => res.status(500).json(err));
     },
 
     createThought(req, res) {
@@ -32,7 +32,7 @@ module.exports = {
              ? res.status(404).json({ message: 'No thought find with this Id!!'})
              : res.json(thought)
         )
-        // .catch((err) => res.status(500).json(err));
+        .catch((err) => res.status(500).json(err));
     },
 
     updateThought(req, res) {
